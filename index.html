@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimApp</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- ICONO DE LAS PESTAÑAS-->
+    <link rel="icon" href="./src/icons/LogoIco.ico">
+</head>
+<body> 
+    <header class="bg-center bg-[url('./src/images/fondo.jpg')] bg-cover">
+        <div class="h-screen bg-black bg-opacity-50 flex flex-col">
+            <div class="fixed w-full z-50 p-7 bg-gradient-to-b from-sky-300 to-blue-400 text-slate-700 shadow-md flex justify-between flex-col md:flex-row items-center">
+                <a href=""><h1 class="text-4xl font-bold text-slate-100 hover:opacity-80 md:mb-0 mb-3 hover:scale-105">Clim<span class="text-amber-300">App</span></h1></a>
+                <nav class="flex gap-5 items-center">
+                    <a href="./views/verClima.html" class="text-slate-100 text-xl font-semibold hover:text-amber-300 hover:scale-105">Ver Clima</a>
+                    <a href="./views/blog.html" class="text-slate-100 text-xl font-semibold hover:text-amber-300 hover:scale-105">Blog</a>
+                    <a href="./views/contacto.html" class="text-slate-100 text-xl font-semibold hover:text-amber-300 hover:scale-105">Contacto</a>
+                </nav> 
+            </div>
+            <div class="flex flex-col items-center justify-center flex-grow gap-4">
+                <h1 class="text-6xl md:text-9xl font-bold text-slate-100">Clim<span class="text-amber-300">App</span></h1>
+                <p class="text-white text-xl text-center font-semibold">En ClimApp podras consultar el clima de todo México.</p>
+                <a class="border rounded-md border-white text-xl text-white p-3 font-bold uppercase hover:text-amber-400 hover:border-amber-400 hover:scale-105" href="./views/verClima.html">Ver Clima</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="md:m-14 mb-5 shadow-lg p-10 bg-zinc-100">
+            <div class="flex flex-col md:flex-row gap-3 items-center justify-around">
+                <div class="md:w-1/2">
+                    <h3 class="md:text-5xl text-3xl font-bold text-slate-800 text-center mb-10">¿Qué es Clim<span class="text-amber-400">App</span>?</h3>
+                    <p class="text-lg text-slate-700 text-justify">ClimApp es una aplicación web diseñada para brindarte de manera eficiente, intuitiva y sencilla el pronóstico del tiempo diario, especialmente útil si te encuentras visitando o residiendo en México. Esta herramienta te facilita la búsqueda de pronósticos meteorológicos, permitiéndote acceder de manera rápida y precisa a la información climática detallada por estado y municipio.</p>
+                </div>
+                <img class="w-1/2 lg:w-1/4" src="./src/images/Logo.png" alt="Logo" title="logo">
+            </div>
+        </section>
+        <section class="bg-center bg-[url('./src/images/fondo1.jpg')] bg-cover md:my-12 my-6">
+            <div class="bg-black bg-opacity-70 flex flex-col lg:flex-row items-center justify-center md:gap-20 p-10">
+                <img src="./src/images/mapaMexico.webp" alt="Mapa México" title="Mapa México" class="w-1/2 lg:w-1/3">
+                <div class="flex flex-col items-center gap-10 lg:w-1/3">
+                    <h3 class="md:text-4xl text-2xl font-bold text-slate-100"><span class="md:text-5xl text-3xl">Clim<span class="text-amber-400">App</span></span> :</h3>
+                    <ol class="font-semibold text-slate-200 md:text-2xl text-xl my-10 space-y-16 text-justify">
+                        <li class="flex gap-5 items-center">
+                            <div class=" bg-amber-300 p-1 rounded-full"></div>
+                            <p>Posee casi 10,000 registros climáticos abarcando todo México.</p>
+                        </li>
+                        <li class="flex gap-5 items-center">
+                            <div class=" bg-amber-300 p-1 rounded-full"></div>
+                            <p>Ofrece acceso al pronóstico del clima para todos los municipios de México.</p>
+                        </li>
+                        <li class="flex gap-5 items-center">
+                            <div class=" bg-amber-300 p-1 rounded-full"></div>
+                            <p>Facilita la búsqueda y filtrado del clima por estado y municipio, permitiendo una selección precisa de la información deseada.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="md:m-14 mb-5 shadow-lg p-10 bg-zinc-100">
+            <div class="flex flex-col md:flex-row gap-6 items-center justify-around">
+                <img class="md:w-1/2" src="./src/images/SMN.jpg" alt="Logo" title="logo">
+                <div class="md:w-1/2">
+                    <p class="text-lg text-slate-700 text-justify"><span class="md:text-5xl text-3xl text-slate-800 font-bold">Clim<span class="text-amber-400">App</span></span> utiliza la API del Sistema Meteorológico Nacional de México, que brinda acceso a datos detallados del pronóstico climático por municipio. Esta API permite la consulta de información para el día actual y los tres días siguientes, ofreciendo actualizaciones periódicas cada 15 minutos. Proporciona alrededor de 10,000 registros climáticos.</h3>
+                </div>
+            </div>
+        </section>
+        <section class="bg-center bg-[url('./src/images/fondoNoticias.jpg')] bg-cover md:my-12 my-6">
+            <div class="bg-black bg-opacity-70 flex flex-col items-center justify-center gap-10 p-10 min-h-96">
+                <h3 class="text-slate-100 font-bold md:text-5xl text-3xl">Visita nuestro Blog</h3>
+                <p class="text-center font-semibold text-slate-200 md:text-2xl text-xl">Exploramos el clima de México con noticias actualizadas y artículos detallados sobre su funcionamiento: desde mediciones hasta fenómenos. Sumérgete en pronósticos y análisis detallados del clima nacional. Únete a nuestra comunidad para comprender cómo influye en nuestro país y explorar la ciencia del clima en profundidad.</p>
+                <a class="border rounded-md border-white text-xl text-white p-3 font-bold uppercase hover:text-amber-400 hover:border-amber-400 hover:scale-105" href="./views/blog.html">Visita nuestro Blog</a>
+            </div>
+        </section>
+        <section class="md:m-14 mb-5 shadow-lg p-10 bg-zinc-100">
+            <h3 class="md:text-5xl text-3xl font-bold text-slate-800 text-center mb-10">¿Cómo consultar el clima con Clim<span class="text-amber-400">App</span>?</h3>
+            <div class="flex flex-col md:flex-row gap-3 items-center justify-around">
+                <div class="md:w-1/2 space-y-4">
+                    <p class="text-lg text-slate-700 text-justify">Al ingresar a <a href="./views/verClima.html" class="text-amber-400 font-bold hover:opacity-70">ver clima</a>, descubrirás las condiciones climáticas de las principales ciudades de México. Posteriormente, podrás filtrar por estado: simplemente introduce el nombre y selecciona tu estado para visualizar los climas actuales de todos los municipios en ese estado.</p>
+                    <p class="text-lg text-slate-700 text-justify">Al ingresar el estado, podrás filtrar por los municipios correspondientes; basta con escribir el nombre del municipio, seleccionarlo y te mostrará el pronóstico actual y para los próximos tres días de dicho lugar.</p>
+                </div>
+                <img class="md:w-1/3" src="./src/images/verClima.jpg" alt="Logo" title="logo">
+            </div>
+        </section>
+        <section class="bg-center bg-[url('./src/images/fondoContacto.jpg')] bg-cover md:my-12 my-6">
+            <div class="bg-black bg-opacity-70 flex flex-col items-center justify-center gap-10 p-10 min-h-96">
+                <h3 class="text-slate-100 font-bold md:text-5xl text-3xl">Contáctanos</h3>
+                <p class="text-center font-semibold text-slate-200 md:text-2xl text-xl">¿Tienes algo en mente para compartir? ¿Quisieras hacer alguna sugerencia sobre la aplicación o proponer algo nuevo? ¡Estamos aquí para escucharte! Por favor, déjanos saber tus ideas, sugerencias o cualquier cosa que quieras compartir en este espacio. ¡Tu opinión es importante para nosotros!</p>
+                <a class="border rounded-md border-white text-xl text-white p-3 font-bold uppercase hover:text-amber-400 hover:border-amber-400 hover:scale-105" href="./views/contacto.html">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-2 text-center bg-gradient-to-b from-sky-300 to-blue-400 lg:text-left">
+        <div class="p-5 text-center text-white text-1xl">
+        © 2023 Copyright:
+        <a
+            class="text-amber-300"
+            >ASGV, IMO, JDMP</a>
+        </div>
+    </footer>
+</body>
+</html>

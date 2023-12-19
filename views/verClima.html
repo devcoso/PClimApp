@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimApp</title>
+    <link rel="stylesheet" href="../main.css">
+        <!-- ICONO DE LAS PESTAÑAS-->
+        <link rel="icon" href="../src/icons/LogoIco.ico">
+</head>
+<body>
+    <div class="sticky top-0 z-50 p-7 bg-gradient-to-b from-sky-300 to-blue-400 text-slate-700 shadow-md flex justify-between flex-col md:flex-row items-center">
+        <a href="../index.html"><h1 class="text-4xl font-bold text-slate-100 hover:opacity-80 md:mb-0 mb-3 hover:scale-105">Clim<span class="text-amber-300">App</span></h1></a>
+        <nav class="flex gap-5 items-center">
+            <a href="" class="text-xl font-semibold text-amber-300 hover:scale-105">Ver Clima</a>
+            <a href="./blog.html" class="text-slate-100 text-xl font-semibold hover:text-amber-300 hover:scale-105">Blog</a>
+            <a href="./contacto.html" class="text-slate-100 text-xl font-semibold hover:text-amber-300 hover:scale-105">Contacto</a>
+        </nav> 
+    </div>
+
+    <div class="shadow-lg p-4 sm:m-10 bg-zinc-100 lg:flex">
+        <div class="lg:w-1/2 p-3">
+            <label for="inputEstado" class="text-lg text-slate-700 text-justify m">Selecciona un estado</label>
+            <input type="text" id="inputEstado" class="bg-gray-50 border border-gray-300 text-lg mt-2 text-slate-700 text-justify focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nombre del Estado"></select>
+            <div class="relative z-40">
+                <ol id="busquedaEstado" class=" bg-white w-full absolute hidden max-h-36 lg:max-h-96 overflow-y-auto"></ol>
+            </div>
+        </div>
+        <div class="lg:w-1/2 p-3">
+            <label for="inputMuncipio" class="text-lg text-slate-700 text-justify m">Selecciona un municipio</label>
+            <input disabled type="text"  id="inputMuncipio" class="bg-gray-50 border border-gray-300 text-lg mt-2 text-slate-700 text-justify focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nombre del Municipio"></select>
+            <div class="relative z-40">
+                <ol id="busquedaMuncipio" class="bg-white w-full absolute hidden max-h-36 lg:max-h-96 overflow-y-auto"></ol>
+            </div>
+        </div>
+    </div>
+
+    <main class="min-h-screen">      
+        <div id="paginacion" class="paginación hidden mt-2 flex-col sm:m-10 justify-between items-center md:flex-row">
+            <p class="text-xl mb-2 text-slate-700 uppercase">Mostrando de <span id="inicioPag" class="font-bold text-slate-800"></span> a <span id="finPag" class="font-bold text-slate-800"></span> de <span id="munPag" class="font-bold text-slate-800"></span> municipios</p>
+            <div>
+                <button id="antPag" type="button" class="text-white bg-gradient-to-b from-sky-400 to-blue-500 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">&laquo Anterior</button>
+                <button id="sigPag" type="button" class="text-white bg-gradient-to-b from-sky-400 to-blue-500 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Siguiente &raquo</button>
+            </div>
+        </div>
+        
+        <h2 id="tituloClima" class="text-4xl my-5 font-bold uppercase text-slate-700 text-center"></h2>
+        <div id="listaMunicipios" class="grid sm:m-10 md:grid-cols-1 lg:grid-cols-2 gap-6"></div>
+    </main>
+
+    <footer class="mt-2 text-center bg-gradient-to-b from-sky-300 to-blue-400 lg:text-left">
+        <div class="p-5 text-center text-white text-1xl">
+        © 2023 Copyright:
+        <a
+            class="text-amber-300"
+            >ASGV, IMO, JDMP</a>
+        </div>
+    </footer>
+
+    <script src="../src/scripts/datos.js"></script>
+    <script src="../src/scripts/verClima.js"></script>
+</body>
+</html>
